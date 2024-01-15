@@ -222,7 +222,7 @@ body {
   }
 
   100% {
-    transform: translate(-55vw, -30vh)
+    transform: translate(-55vw, -27vh)
   }
 }
 

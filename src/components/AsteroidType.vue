@@ -9,7 +9,7 @@
                     <img id ="teenage-Asteroid" class="Asteroid" src = "@/assets/moon.svg" alt = "teenage-Asteroid">
                 </div>
                 <button class = "btnPerv" @click ="prevPage">חזור</button>
-                <button v-if = "btnClick === 3 && !showInfo" @click = statGame class = "btnPerv">למשחק</button>
+                <button v-if = "btnClick >= 3 && !showInfo" @click = statGame class = "btnPerv">למשחק</button>
             </div>   
             <div v-if = "showInfo"> 
                     <information-page :typeAstro = typeAstro @prev-page = prevTypePage></information-page>

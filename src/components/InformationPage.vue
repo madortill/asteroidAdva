@@ -1,10 +1,10 @@
 <template>
-    <div id = "information-page"> 
-        <div class = "textInfo"> 
-            <h1 class = "textTitle"> {{ astroType[typeAstro].title }} </h1>
-            <p class = "infoText"> {{ astroType[typeAstro].text }} </p>
+    <div id="information-page">
+        <div class="textInfoAsteo">
+            <h1 class="textTitle"> {{ astroType[typeAstro].title }} </h1>
+            <p class="infoText"> {{ astroType[typeAstro].text }} </p>
         </div>
-        <button class = "retBtn" @click ="prevPage" alt ="retBtn" >חזור</button>
+        <button class="retBtn" @click="prevPage" alt="retBtn">חזור</button>
     </div>
 </template>
 
@@ -14,7 +14,7 @@ export default {
     props: ['typeAstro'],
     data() {
         return {
-            astroType : [
+            astroType: [
                 {
                     title: 'אסטרואיד בוגר',
                     text: 'אסטרואיד ממש גדול שיכול להשמיד את כדור הארץ'
@@ -38,28 +38,40 @@ export default {
 };
 </script>
 
-<style> 
-.retBtn {
-    position: fixed;
-    font-family: 'Heebo-bold';
-    background-color: #61a5c2;
-    border-radius: 3vw;
-    width: 20vw;
-    height: 5.5vh;
-    min-width: 20vw;
-    max-width: 6vh;
-    color: #e6e8d2;
-    cursor: pointer;
-    top: 70%;
-    left: 60%;
-    outline: 2px solid #61a5c2;
-}
+<style> #information-page {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     height: 60vh;
+ }
 
-.textTitle {
-  font-family: 'Heebo-Bold';
-}
+ .retBtn {
+     position: fixed;
+     font-family: 'Heebo-bold';
+     background-color: #61a5c2;
+     border-radius: 3vw;
+     width: 20vw;
+     height: 5.5vh;
+     min-width: 20vw;
+     max-width: 6vh;
+     color: #e6e8d2;
+     cursor: pointer;
+     top: 70%;
+     left: 60%;
+     outline: 2px solid #61a5c2;
+ }
 
-.infoText {
-    font-size: 1.2rem;
-}
+ .textTitle {
+     font-family: 'Heebo-Bold';
+ }
+
+ /* .textInfoAsteo {
+     text-align: center;
+ } */
+
+ .infoText {
+     font-size: 1.2rem;
+
+ }
 </style>

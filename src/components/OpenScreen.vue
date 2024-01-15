@@ -67,7 +67,7 @@ export default {
     text-align: center;
     margin: auto;
     background-repeat: no-repeat;
-    height: 70%;
+    height: 60%;
     width: 65%;
     background-size: cover;
     border-radius: 10%;
@@ -77,7 +77,6 @@ export default {
 .textInfo {
     color: #e6e8d2;
     text-align: center;
-    /* padding: 2%; */
     font-size: 1.2rem;
 }
 
@@ -109,6 +108,7 @@ export default {
 .button-container {
   display: flex;
   justify-content: space-between; /* Distribute space between buttons */
+  /* margin-top: 25%; */
 }
 </style>
   
